@@ -1,0 +1,15 @@
+---
+
+# Ansible Playbook to install Nginx webserver, and an API server
+
+- hosts: webservers
+  roles: 
+
+    - common
+    - webservers
+
+- hosts: api_servers
+  roles:
+
+    - common
+    - webservers
